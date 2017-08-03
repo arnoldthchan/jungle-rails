@@ -8,7 +8,34 @@
     <h1>Thanks for ordering from jungle.com, <%= @user.first_name %></h1>
     <p>
       You have successfully ordered from jungle.com,
+      Your Order:
     </p>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th colspan="2">Product</th>
+            <th>Unit Price</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+        <% @list_total = 0 %>
+        <% @cart.each do |product_id, details| %>
+          <%= render 'item', product_id: product_id, details: details %>
+        <% end %>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="4">
+              TOTAL:
+            </th>
+            <th>
+              <%= @list_total %>
+            </th>
+          </tr>
+        </tfoot>
+      </table>
     <p>Thanks for ordering and have a great day!</p>
   </body>
 </html>
