@@ -1,8 +1,9 @@
 
 <% if review = Review.find_by(id: review_id) %>
   <% user = User.find_by(id: review.user_id) %>
-
-  <h4><%= user.first_name %> <%= user.last_name %></h4>
-  <p> Rating <%= review.rating %></p>
+  <h4> Rating <%= review.rating %>/5</h4>
+  <em>By <%= user.first_name %> <%= user.last_name %></em>
+  <p/>
   <p><%= review.description %></p>
+  <br>
 <% end %>
