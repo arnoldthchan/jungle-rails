@@ -131,7 +131,36 @@ cat3.products.create!({
   quantity: 0,
   price: 2_483.75
 })
+## PRODUCTS
+puts "Generating Users ..."
 
+User.create({
+  first_name: "Alice",
+  last_name: "Alice",
+  email: "Alice@Alice.com",
+  password: "Alice"
+})
+
+User.create({
+  first_name: "Bob",
+  last_name: "Bob",
+  email: "Bob@Bob.com",
+  password: "Bob"
+})
+
+User.create({
+  first_name: "Chloe",
+  last_name: "Chloe",
+  email: "Chloe@Chloe.com",
+  password: "Chloe"
+})
+
+User.create({
+  first_name: "Devin",
+  last_name: "Devin",
+  email: "Devin@Devin.com",
+  password: "Devin"
+})
 ## REVIEWS
 
 puts "Adding reviews ..."
