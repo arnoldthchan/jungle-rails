@@ -27,5 +27,10 @@
     </div>
 
   </article>
-
+  <div class="col-sm-12">
+    <h3>Reviews</h3>
+      <% @reviews.each do |review_id, user_id, description, rating| %>
+        <%= render 'review', review_id: review_id, user_id: user_id, description: description, rating: rating %>
+      <% end %>
+  </div>
 </section>

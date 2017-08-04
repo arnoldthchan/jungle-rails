@@ -144,6 +144,20 @@ Review.create({
 })
 
 Review.create({
+  product_id: 1,
+  user_id: 2,
+  description: Faker::Hipster.paragraph(3),
+  rating: 5
+})
+
+Review.create({
+  product_id: 1,
+  user_id: 3,
+  description: Faker::Hipster.paragraph(3),
+  rating: 4
+})
+
+Review.create({
   product_id: 2,
   user_id: 2,
   description: Faker::Hipster.paragraph(3),
