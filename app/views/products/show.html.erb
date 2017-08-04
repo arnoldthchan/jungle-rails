@@ -28,8 +28,13 @@
 
   </article>
   <div class="col-sm-12">
-    <h3 class="text-center"><u>Reviews</u></h3>
+    <h3> Write a review, my dude.</h3>
+        <%= render 'form' %>
+    <h3 class="text-center">
+      <u>Reviews</u>
+    </h3>
       <br>
+
       <% @reviews.each do |review_id, user_id, description, rating| %>
         <%= render 'review', review_id: review_id, user_id: user_id, description: description, rating: rating %>
       <% end %>
