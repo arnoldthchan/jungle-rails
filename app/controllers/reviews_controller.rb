@@ -10,16 +10,16 @@ class ReviewsController < ApplicationController
     )
 
     if @review.save
-      redirect_to product_path (params[:product_id]), notice: 'Review posted!'
+      redirect_to :back, notice: 'Review posted!'
     else
-      redirect_to product_path (params[:product_id]), notice: 'Review failed to post!'
+      redirect_to :back, notice: 'Review failed to post!'
     end
   end
 
   def destroy
     @review = Review.find params[:id]
     @review.destroy
-    redirect_to product_path (params[:product_id]) , notice: 'Review deleted!'
+    redirect_to :back , notice: 'Review deleted!'
   end
 
   private
