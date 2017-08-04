@@ -1,11 +1,25 @@
 $jungle-blue: #232f3e;
+$jungle-orange: #ff9900;
+
 .navbar-default,
+.dropdown-toggle,
+.dropdown-menu,
 .navbar-header {
-  background: $jungle-blue;
+  background: $jungle-blue !important;
   .navbar-nav li a,
   .navbar-brand{
-    color: white;
+    color: white !important;
   }
+}
+a.nav,
+a.nav:hover,
+a.nav:visited,
+a.nav:active,
+a.nav:focus{
+  color: white !important;
+}
+.text-danger{
+  color: $jungle-orange;
 }
 main section.products-index,
 main section.categories-show {
