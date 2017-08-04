@@ -2,7 +2,11 @@
   <% user = User.find_by(id: review.user_id) %>
   <% full_name = "#{user.first_name} #{user.last_name}" %>
 
-  <h4> Rating <%= review.rating %>/5</h4>
+  <% if user.id == current_user.id%>
+    DELETE BUTTON HERE
+  <% end %>
+
+  <h4><%= "\u{2B50}" * review.rating %></h4>
   <em>By <%= full_name %> </em>
   <p/>
   <p><%= review.description %></p>
