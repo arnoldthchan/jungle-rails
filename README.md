@@ -3,6 +3,10 @@
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
 ## Screenshots
+<img height="200" src="https://github.com/arnoldthchan/jungle-rails/blob/master/screenshots/ProductIndex.png?raw=true0">
+<img height="200" src="https://github.com/arnoldthchan/jungle-rails/blob/master/screenshots/ProductReviews.png?raw=true0">
+<img height="200" src="https://github.com/arnoldthchan/jungle-rails/blob/master/screenshots/StripeVerfication.png?raw=true">
+<img height="200" src="https://github.com/arnoldthchan/jungle-rails/blob/master/screenshots/OrderDetails.png?raw=true0">
 
 ## Setup
 
