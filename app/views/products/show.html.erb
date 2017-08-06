@@ -36,7 +36,6 @@
       <u>Reviews</u>
     </h3>
       <br>
-
       <% @reviews.each do |review_id, user_id, description, rating| %>
         <%= render 'review', review_id: review_id, user_id: user_id, description: description, rating: rating %>
       <% end %>

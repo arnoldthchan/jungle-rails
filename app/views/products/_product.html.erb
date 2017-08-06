@@ -5,6 +5,13 @@
       <h4><%= product.name %></h4>
     <% end %>
   </header>
+  <p class="rating">
+  <% if product.average_rating == nil%>
+    No reviews yet!
+  <% else %>
+    <%= "\u{2B50}" * product.average_rating %>
+  <% end %>
+  </p>
   <p class="description">
     <%= product.description %>
   </p>
