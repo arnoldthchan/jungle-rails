@@ -21,6 +21,7 @@ RSpec.feature "Visitor navigates to specific product page", type: :feature, js: 
     # ACT
     visit root_path
     find_link('Details »',class: 'btn', href: '/products/1').click
+    sleep 3
 
     # DEBUG / VERIFY
     save_screenshot
