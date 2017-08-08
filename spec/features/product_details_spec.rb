@@ -26,7 +26,7 @@ RSpec.feature "Visitor navigates to specific product page", type: :feature, js: 
 
     # DEBUG / VERIFY
     save_screenshot
-    # expect(page).to have_css 'product-detail', count: 1
+    expect(page).to have_css 'product-detail', count: 1
 
   end
 
