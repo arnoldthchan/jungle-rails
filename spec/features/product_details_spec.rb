@@ -20,13 +20,12 @@ RSpec.feature "Visitor navigates to specific product page", type: :feature, js: 
   scenario "They see the product they selected" do
     # ACT
     visit root_path
-    # <a class="btn btn-default pull-right" href="/products/1">
-    click_link('Details »', href: '/products/1')
-
+    find_link('Details »',class: 'btn', href: '/products/1').click
+    sleep 3
 
     # DEBUG / VERIFY
     save_screenshot
-    expect(page).to have_css 'product-detail', count: 1
+    expect(page).to have_css 'article.product-detail', count: 1
 
   end
 
